@@ -161,6 +161,7 @@
     "https://deno.land/x/rutt@0.0.14/mod.ts": "5027b8e8b12acca48b396a25aee74ad7ee94a25c24cda75571d7839cbd41113c",
     "https://deno.land/x/tabler_icons_tsx@0.0.2/tsx/arrow-big-left.tsx": "0e54dddf6c3201d2aa87ebac84e29fb822ae1c9f9aec361f095a966fd00bd7d6",
     "https://deno.land/x/tabler_icons_tsx@0.0.2/tsx/brand-amongus.tsx": "bb29f1f78088292174e6a50432b0a930ed7846cfea6d594f5eaf9665191b8702",
+    "https://deno.land/x/tabler_icons_tsx@0.0.2/tsx/database-export.tsx": "f168dbefb7970e72775d3869279acaca75e8bc8f2f6a0980d429217ac8309cab",
     "https://deno.land/x/tabler_icons_tsx@0.0.2/tsx/lego.tsx": "d27e3cdf6b091c1a66bbb391a3dda6bf84ebf2e713b235f64f7a41517edf3da2",
     "https://deno.land/x/tabler_icons_tsx@0.0.2/tsx/mood-sing.tsx": "66db7f7ed346b7653e01eee05174b6f024cb95fd55c3b654298b42429ace2cdb",
     "https://deno.land/x/ts_morph@16.0.0/common/DenoRuntime.ts": "537800e840d0994f9055164e11bf33eadf96419246af0d3c453793c3ae67bdb3",
@@ -192,6 +193,7 @@
     "https://esm.sh/v106/twind@0.16.17/deno/sheets.js": "f75586c3a778278f99ca9e6761e8c8a2089c66d6a503bb25e3bba38597fe1e30",
     "https://esm.sh/v106/twind@0.16.17/deno/twind.js": "41f9ec5fe59338ccbd5877b6c7d2c41536b6ed725280d447777435fa446faabc",
     "https://esm.sh/v106/twind@0.16.17/sheets/sheets.d.ts": "73505b4708bcde9254db584db58166bda6e45860d905991a2cfa049dda805efa",
-    "https://esm.sh/v106/twind@0.16.17/twind.d.ts": "880fbe3dea75d4d1ed627d272bae4afd34c1865be7f85ff10399aaaaaa3f7869"
+    "https://esm.sh/v106/twind@0.16.17/twind.d.ts": "880fbe3dea75d4d1ed627d272bae4afd34c1865be7f85ff10399aaaaaa3f7869",
+    "https://unpkg.com/xlsx@0.18.5/xlsx.mjs": "992eec8c1a888e7f6c9b2a3cbba014bedade473da4cbd8fc9bb95de56a87f222"
   }
 }

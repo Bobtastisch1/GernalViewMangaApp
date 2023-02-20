@@ -3,6 +3,7 @@ import { data } from "../../db/dbconnection.ts";
 import { Handlers, PageProps } from "$fresh/server.ts";
 import { Head } from "$fresh/runtime.ts";
 import IconArrowBigLeft from "https://deno.land/x/tabler_icons_tsx@0.0.2/tsx/arrow-big-left.tsx"
+import IconDatabaseExport from "https://deno.land/x/tabler_icons_tsx@0.0.2/tsx/database-export.tsx"
 const client = await new Client(data);
 
 interface NumbersDB {
@@ -22,7 +23,6 @@ interface NumbersDB {
     active: boolean;
 }
 
-
 export const handler: Handlers<NumbersDB[] | null> = {
     async GET(_, ctx){
         await client.connect();
@@ -41,6 +41,7 @@ export default function Page({ data }: PageProps<NumbersDB[] | null>) {
     return (
       <>
       <button onClick="window.location.href='..'" class="py-2"><IconArrowBigLeft class="w-9 h-9"></IconArrowBigLeft></button>
+      <button onClick="window.location.href='..'" class="py-2"><IconDatabaseExport class="w-9 h-9"></IconDatabaseExport></button>
       <Head>
         <title>Numbers</title>
       </Head>
