@@ -52,4 +52,10 @@ xlsxData.forEach(row => {
        rows = rows.slice(0, rows.length -1);
    }
    await client.queryObject(`INSERT INTO public."Numbers"(id,name, link, tag, read, date0, score, art,reread,date2,reread3,date3,date,active) VALUES ${rows};`);
- }
+   client.end();
+}
+
+
+
+
+

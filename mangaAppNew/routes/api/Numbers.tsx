@@ -4,6 +4,9 @@ import { Handlers, PageProps } from "$fresh/server.ts";
 import { Head } from "$fresh/runtime.ts";
 import IconArrowBigLeft from "https://deno.land/x/tabler_icons_tsx@0.0.2/tsx/arrow-big-left.tsx"
 import IconDatabaseExport from "https://deno.land/x/tabler_icons_tsx@0.0.2/tsx/database-export.tsx"
+import { Button } from "../../components/Button.tsx";
+import Countdown from "../../islands/Countdown.tsx";
+
 const client = await new Client(data);
 
 interface NumbersDB {
@@ -23,6 +26,7 @@ interface NumbersDB {
     active: boolean;
 }
 
+
 export const handler: Handlers<NumbersDB[] | null> = {
     async GET(_, ctx){
         await client.connect();
@@ -32,16 +36,20 @@ export const handler: Handlers<NumbersDB[] | null> = {
        return ctx.render(result);
     }
 };
-
+     
 export default function Page({ data }: PageProps<NumbersDB[] | null>) {
     if (!data) {
       return <h1>User not found</h1>;
     }
-
+    const date = new Date();
+    date.setHours(date.getHours() +1 );
     return (
       <>
       <button onClick="window.location.href='..'" class="py-2"><IconArrowBigLeft class="w-9 h-9"></IconArrowBigLeft></button>
-      <button onClick="window.location.href='..'" class="py-2"><IconDatabaseExport class="w-9 h-9"></IconDatabaseExport></button>
+      <Button onClick={() => Test()} class="py-2"><IconDatabaseExport class="w-9 h-9"></IconDatabaseExport></Button>
+      <p>
+      The big event is happening <Countdown target={date.toISOString() } />.
+    </p>
       <Head>
         <title>Numbers</title>
       </Head>
