@@ -61,7 +61,7 @@ export default function Page({ data }: PageProps<NumbersDB[] | null>) {
       <th class="px-4 py-2">link</th>
       <th class="px-4 py-2">tag</th>
       <th class="px-4 py-2">read</th>
-      <th class="px-4 py-2">date</th>
+      <th class="px-4 py-2">date0</th>
       <th class="px-4 py-2">score</th>
       <th class="px-4 py-2">art</th>
       <th class="px-4 py-2">reread</th>
