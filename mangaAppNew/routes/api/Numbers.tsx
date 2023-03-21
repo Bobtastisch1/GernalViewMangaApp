@@ -6,7 +6,6 @@ import IconArrowBigLeft from "https://deno.land/x/tabler_icons_tsx@0.0.2/tsx/arr
 import IconDatabaseExport from "https://deno.land/x/tabler_icons_tsx@0.0.2/tsx/database-export.tsx"
 import { Button } from "../../components/Button.tsx";
 import Countdown from "../../islands/Countdown.tsx";
-
 const client = await new Client(data);
 
 interface NumbersDB {
@@ -50,6 +49,7 @@ export default function Page({ data }: PageProps<NumbersDB[] | null>) {
       <p>
       The big event is happening <Countdown target={date.toISOString() } />.
     </p>
+      
       <Head>
         <title>Numbers</title>
       </Head>
